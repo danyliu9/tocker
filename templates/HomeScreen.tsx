@@ -1,9 +1,16 @@
 import React, { useCallback } from 'react';
-import { Button, Text, View, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
 import { RootStackParamList } from './Navigation/NavigationTree';
 import { primary } from '../styles/colors';
 import { fontSizes, sizes } from '../styles/sizes';
+import Button from './Button';
+import ButtonView, { ButtonViewFeedback } from './ButtonView';
+import TouchableViewWithBounce from './TouchableViewWithBounce';
+import { faBacon } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import TimerButton from './TimerButton';
+import Timer from './Timer';
 
 interface HomeScreenProps
   extends StackScreenProps<RootStackParamList, 'Home'> {}
@@ -20,7 +27,11 @@ const HomeScreen: React.FunctionComponent<HomeScreenProps> = React.memo(
         <View style={styles.titleContainer}>
           <Text style={styles.title}>Tocker</Text>
         </View>
-        <Button title="About" onPress={handleAboutClick} />
+        <Timer />
+        <Button label="About" onPress={handleAboutClick} icon={faBacon} />
+        {/*<TouchableViewWithBounce onPress={handleAboutClick}>*/}
+        {/*  <Text>Hello testing</Text>*/}
+        {/*</TouchableViewWithBounce>*/}
       </View>
     );
   },
