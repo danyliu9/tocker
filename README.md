@@ -1,4 +1,7 @@
-# tocker
+# tocker 
+
+![Tocker icon](https://user-images.githubusercontent.com/43103720/131986588-0f7e3309-baa2-47f0-a9ca-75bc2d6342fa.png)
+
 Time clocking app 🕒
 
 ## Installation
