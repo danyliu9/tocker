@@ -16,7 +16,7 @@ and `emulator -avd [AVDNAME]` to run the emulator. Once that's started, in one
 terminal tab, run `npm start` and in another, run `npm run android`. The app
 should install and build.
 
-# Goals 🎯 
+## Goals 🎯 
 
 ### Minimum
 - Record and save periods of time 🚧
